@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 3</title>
+        <script src="http://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script type="application/javascript">
+             $(document).ready(function () {
+			    function createFamilyTree() {
+                    let table = $("<table></table>");
+                    let t1 = $("<tr></tr>");
+                    let th1 = $("<th></th>").text("Firstname");
+                    let th2 = $("<th></th>").text("Lastname");
+                    t1.append(th1, th2);
+                    let t2 = $("<tr></tr>");
+                    var td1 = $("<td></td>").text("Guillaume");
+                    var td2 = $("<td></ td>").text("Salva");
+                    t2.append(td1, td2);
+                    let t3 = $("<tr></tr>");
+                    var td1 = $("<td></td>").text("Paulette");
+                    var td2 = $("<td></ td>").text("Salva");
+                    t3.append(td1, td2);
+                    let t4 = $("<tr></tr>");
+				    var td1 = $("<td></td>").text("Antoine");
+				    var td2 = $("<td></td>").text("Salva");
+				    t4.append(td1, td2);
+                    table.append(t1,t2,t3,t4);
+                    $("body").append(table);
+                };
+                createFamilyTree();
+
+		});
+        </script>
+
+    </head>
+
+    <body>
+
+    </body>
+</html>
